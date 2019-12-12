@@ -73,7 +73,6 @@ plugins=(
   git
   osx
   npm
-  z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,12 +122,11 @@ cd() {
 source $HOME/.zsh/aliases.zsh
 source $HOME/.zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.zsh/zsh-z/zsh-z.plugin.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-. /usr/local/etc/profile.d/z.sh
 
 eval "$(starship init zsh)"alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
