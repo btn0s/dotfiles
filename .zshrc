@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/brendannorris/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -120,9 +120,9 @@ cd() {
   builtin cd "$@" && ls -F
 }
 
-source /Users/brendannorris/.zsh/aliases.zsh
-source /Users/brendannorris/.zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source /Users/brendannorris/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.zsh/aliases.zsh
+source $HOME/.zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export NVM_DIR=~/.nvm
@@ -130,5 +130,5 @@ export NVM_DIR=~/.nvm
 
 . /usr/local/etc/profile.d/z.sh
 
-eval "$(starship init zsh)"alias config='/usr/bin/git --git-dir=/Users/brendannorris/.cfg/ --work-tree=/Users/brendannorris'
-alias config='/usr/bin/git --git-dir=/Users/brendannorris/.cfg/ --work-tree=/Users/brendannorris'
+eval "$(starship init zsh)"alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
